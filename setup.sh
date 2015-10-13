@@ -38,6 +38,7 @@ xcode-select --install
 #install rvm 
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.bash_profile
+source ~/.profile
 #install ruby
 rvm install ruby-2.1.3
 
