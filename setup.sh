@@ -28,6 +28,36 @@ done
 echo "Dotfiles done!"
 
 # copy apps
-ln -s $dir/apps/PickColor.app /Applications/PickColor.app
+cp $dir/apps/PickColor.app /Applications/PickColor.app
 
+#--
+
+#install c++ compiler
+xcode-select --install
+
+#install rvm 
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.bash_profile
+#install ruby
+rvm install ruby-2.1.3
+
+#install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.28.0/install.sh | bash
+source ~/.bash_profile
+# install node v0.10.x
+nvm install 0.10
+
+#install brew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+source ~/.bash_profile
+brew update
+brew tap Homebrew/bundle
+
+# copy apps
+cp -s $dir/Brewfile ~/
+
+#Execute Brewfile
+brew bundle
+
+# create link comand to sublime tree
+sudo ln -s /Applications/Sublime\ Text/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl3
