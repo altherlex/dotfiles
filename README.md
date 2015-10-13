@@ -15,7 +15,7 @@ To run the installer:
 
 It will ask you some questions and tell what it is doing at the moment. Very recommended to modify the installer before run, because there is not many optional choices to make at the moment (it will install my iTerm2 preferences, by exemple).
 
-== Programs
+## Programs
 
 	rvm
 	nvm
