@@ -14,3 +14,24 @@ To run the installer:
     ./setup.sh
 
 It will ask you some questions and tell what it is doing at the moment. Very recommended to modify the installer before run, because there is not many optional choices to make at the moment (it will install my iTerm2 preferences, by exemple).
+
+== Programs
+
+	rvm
+	nvm
+	brew/bundle
+	caskroom/cask
+	gcc
+	wget
+	redis
+	bash-completion
+	mysql
+	vim
+	sublime3
+	spectacle
+	heroku-toolbelt
+	skype
+	slack
+	google-chrome
+	firefox
+
