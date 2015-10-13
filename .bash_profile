@@ -22,7 +22,7 @@ fn_exists()
 # start redis port
 REDIS_RUNNING=$(ps aux | grep redis | grep -cv grep)
 if [[ ($REDIS_RUNNING = 0) ]]; then
-  redis-server --port 16379
+  redis-server --port 16379 &
 fi
 
 # makes your terminal line looks like that: "[user@machine:current_directory ruby_version git_branch]"
