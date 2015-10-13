@@ -39,12 +39,15 @@ xcode-select --install
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source ~/.bash_profile
 source ~/.profile
+source ~/.bashrc
 #install ruby
 rvm install ruby-2.1.3
 
 #install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.28.0/install.sh | bash
 source ~/.bash_profile
+source ~/.profile
+source ~/.bashrc
 # install node v0.10.x
 nvm install 0.10
 
