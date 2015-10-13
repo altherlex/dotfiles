@@ -1,7 +1,7 @@
 export CLICOLOR=1
 export LSCOLORS=gxfxDxdxcxexExhxHxbxBx
 # ~ and my projects folder for cd shortcut
-export CDPATH=$CDPATH:/Users/diogo/Projetos:/Users/diogo
+export CDPATH=$CDPATH:~
 # highlight grep match
 export GREP_OPTIONS="--color=auto"
 # light red for matches
