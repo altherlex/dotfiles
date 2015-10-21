@@ -22,6 +22,7 @@ fn_exists()
 # start redis port
 REDIS_RUNNING=$(ps aux | grep redis | grep -cv grep)
 if [[ ($REDIS_RUNNING = 0) ]]; then
+  cd ~/desenv/ubber-site && DISABLE_SPRING=true rails runner "Rails.application.load_seed"
   redis-server --port 16379 &
 fi
 
@@ -40,3 +41,7 @@ PS1=$PS1"$WHITE] $WHITEBOLD\$$WHITE "
 # load exports and aliases files
 [[ -s "$HOME/.bash_exports" ]] && . "$HOME/.bash_exports"
 [[ -s "$HOME/.bash_aliases" ]] && . "$HOME/.bash_aliases"
+
+source ~/.nvm/nvm.sh
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
