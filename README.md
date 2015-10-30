@@ -35,3 +35,15 @@ It will ask you some questions and tell what it is doing at the moment. Very rec
 	google-chrome
 	firefox
 
+## Temp
+
+  git clone git@bitbucket.org:abrilmdia/ubbersite-vejabh.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-vejacuritiba.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-quatrorodas.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-vejario.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-vejinhas.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-vejinhas-themes.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-exame.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-placar.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-planetasustentavel.git
+  git clone git@bitbucket.org:abrilmdia/ubbersite-u.git
