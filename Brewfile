@@ -1,24 +1,24 @@
+cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 
-brew 'gcc'
+#brew 'node'
 brew 'wget'
-brew 'redis'
-brew 'bash-completion'
-brew 'mysql'
+#brew 'redis'
+#brew 'bash-completion'
+#brew 'mysql'
 brew 'vim'
-brew 'sublime3'
-# required capybara-webkit
-brew 'qt5'
-# qmake -spec macx-g++
-brew 'qt'
-brew 'git'
-brew 'rpm'
+brew 'gitk'
+brew 'mysql'
+brew 'imagemagick'
+brew 'bash-completion'
 
+cask 'java' unless system '/usr/libexec/java_home --failfast'
 cask 'spectacle'
 cask 'heroku-toolbelt'
 cask 'skype'
 cask 'slack'
 cask 'google-chrome'
-cask 'firefox'
-cask 'java' unless system '/usr/libexec/java_home --failfast'
-
+#cask 'firefox'
+cask 'firefox', args: { appdir: '/Applications' }
+cask 'caffeine'
+cask 'sublime-text3'
