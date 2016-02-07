@@ -12,6 +12,7 @@ brew 'qt5'
 # qmake -spec macx-g++
 brew 'qt'
 brew 'git'
+brew 'rpm'
 
 cask 'spectacle'
 cask 'heroku-toolbelt'
